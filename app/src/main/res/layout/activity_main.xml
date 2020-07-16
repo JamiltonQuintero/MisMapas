@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent"
+    android:padding="15sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lugares Mas Concurridos en medellin"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp">
+
+                <ImageButton
+                    android:id="@+id/imgLugares1"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="irMapra"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/botero" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lugar1"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgLugares2"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="irMapa2"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/lleras2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lugar2"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.031">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp">
+
+                <ImageButton
+                    android:id="@+id/imgLugares3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:onClick="irMapa3"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/descalzos" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lugar3"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgLugares4"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginEnd="16dp"
+                    android:onClick="irMapa4"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/aeropuerto" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lugar4"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

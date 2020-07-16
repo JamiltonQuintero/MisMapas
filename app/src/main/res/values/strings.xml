@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MisMapas</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map2</string>
+    <string name="title_activity_maps3">Map3</string>
+    <string name="title_activity_maps4">Map4</string>
+    <string name="lugar1">Plaza Botero</string>
+    <string name="lugar2">Parque Lleras</string>
+    <string name="lugar3">Parque Pies Descalzos</string>
+    <string name="lugar4">Aeropuerto Olaya Herrera</string>
+
+</resources>
